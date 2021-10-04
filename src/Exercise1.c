@@ -17,14 +17,12 @@ int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
 	//Your codes here
 
-int digit;
-	while(testcase!=0)
+int n;
+	while(testcase != 0)
 	{
-	digit = testcase % 10;
-	
-
-	printf("%d",digit);
-	testcase = (testcase-digit)/10;
+	    n = testcase % 10;
+	    printf("%d ",n);
+	    testcase = (testcase - n) / 10;
 	}
 	return 0;
 }
